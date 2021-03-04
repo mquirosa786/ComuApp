@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <View
+        android:id="@+id/v_circle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent"
+        />
+
+    <LinearLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:elevation="6dp"
+        android:paddingTop="20dp">
+
+        <com.mquirosa786.bottommenu.CellImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textAlignment="center"
+            app:menu_imageview_size="50dp" />
+
+        <TextView
+            android:id="@+id/tv_icon_title"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:minWidth="16dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/scotia_normal"
+            android:textAlignment="center"
+            tools:text="Pago"
+            android:text="..."
+            android:textColor="#3c415e"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+
+</merge>

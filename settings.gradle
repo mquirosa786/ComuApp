@@ -1,0 +1,2 @@
+include ':app' , ':bottommenu'
+rootProject.name='ComuApp'

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="transfer_foreground_default">72dp</dimen>
+    <dimen name="slide_to_complete_start_margin">30dp</dimen>
+    <dimen name="bottom_sheet_corner_radius">14dp</dimen>
+    <dimen name="bottom_sheet_top_padding">8dp</dimen>
+</resources>

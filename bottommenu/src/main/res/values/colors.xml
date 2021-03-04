@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="DarkGray">#555555</color>
+    <color name="orange">#FF8636</color>
+    <color name="Black">#000000</color>
+    <color name="BlackGray">#040025</color>
+    <color name="white">#ffffff</color>
+
+    <color name="dividerColor">#e2e8ee</color>
+    <color name="pageBackground">#f8faff</color>
+
+    <!-- Pressable views -->
+    <color name="defaultBgColor">@color/white</color>
+    <color name="pressedBgColor">#e2e8ee</color>
+
+    <color name="custom_card_shadow">#12002850</color>
+    <color name="shadow_confirmation">#80E2E8EE</color>
+    <color name="background_transfer">#FAFBFD</color>
+    <color name="button_purple">#8230DF</color>
+    <color name="button_blue">#3D97C4</color>
+    <color name="button_text_blue">#087BB4</color>
+    <color name="fingerprint_status">#B5B5B5</color>
+    <color name="fingerprint_hint">#8A000000</color>
+    <color name="dialog_black">#DE000000</color>
+    <color name="mpsa_black">#050025</color>
+    <color name="link_grey">#757575</color>
+    <color name="disabled_grey">#D7D7D7</color>
+    <color name="error_red">#CB061D</color>
+    <color name="error_text">@color/error_red</color>
+    <color name="beta_logo_bg_red">#CD071E</color>
+    <color name="purple_new">#7748B7</color>
+    <color name="green">#008660</color>
+    <color name="green_positive">#01A87F</color>
+    <color name="amount_highlight">#128467</color>
+    <color name="divider_grey">#E2E8EE</color>
+    <color name="simple_vertical_divider_color">#E1E7ED</color>
+    <color name="title_grey">#929292</color>
+    <color name="title_grey_details">#757575</color>
+    <color name="loading_status_bar_red">#EEAAB1</color>
+    <color name="loading_status_bar_transfers">#A8DBEE</color>
+    <color name="loading_status_bar_pay">#AED3CC</color>
+    <color name="status_bar_transfers_dark">#003F56</color>
+    <color name="frosted_white">#3CFFFFFF</color>
+    <color name="midnight_noir">#FF333333</color>
+    <color name="gray_hint">#929292</color>
+    <color name="snackbar_background">#A7F2E8</color>
+    <color name="button_disabled_grey">#D6D6D6</color>
+    <color name="spinner_border_gray">#D6D6D6</color>
+    <color name="wallet_pending_grey">#979797</color>
+    <color name="deposit_amount_border_grey">#DFE8EE</color>
+    <color name="fingerprint_green">#128477</color>
+    <color name="fingerprint_red">#F44336</color>
+
+    <color name="slider_background">#F6F6F6</color>
+    <color name="slider_background_border">#E2E8EE</color>
+    <color name="dashed_border">#CBD2D9</color>
+    <color name="snackbar_text_color">#00251F</color>
+    <color name="emt_register_grey">#4A4A4A</color>
+
+    <color name="infographic_available_credit_line">#8894A1</color>
+    <color name="infographic_pending_line">#0B9CE5</color>
+
+    <!-- Contacts/Recipient Avatar Colors -->
+    <color name="badge_red">#FFED0722</color>
+    <color name="badge_light_purple">#FF7462E0</color>
+    <color name="badge_purple">#FFBE207A</color>
+    <color name="badge_cyan_green">#FF064765</color>
+    <color name="badge_olive_green">#FF575700</color>
+    <color name="badge_bright_orange">#FFFE5E48</color>
+    <color name="badge_teal">#FF5EDAB0</color>
+    <color name="badge_yellow">#FFF5C400</color>
+    <color name="badge_blue">#FF0B9CE5</color>
+    <color name="badge_green">@color/green</color>
+    <color name="badge_dark_blue">#FF281B7E</color>
+
+    <array name="contact_colours">
+        <item>@color/badge_red</item>
+        <item>@color/badge_light_purple</item>
+        <item>@color/badge_purple</item>
+        <item>@color/badge_cyan_green</item>
+        <item>@color/badge_olive_green</item>
+        <item>@color/badge_bright_orange</item>
+        <item>@color/badge_teal</item>
+        <item>@color/badge_yellow</item>
+        <item>@color/badge_blue</item>
+        <item>@color/badge_green</item>
+        <item>@color/badge_dark_blue</item>
+    </array>
+
+    <!-- Splash -->
+    <!-- Premium Background / Progress Bar Colors -->
+    <color name="premium_blue">#FF0B9CE5</color>
+    <color name="premium_purple">#FF8230DF</color>
+    <color name="premium_fucshia">#FFBE207A</color>
+    <color name="premium_green">#FF01A87F</color>
+
+    <array name="premium_account_colors">
+        <item>@color/premium_blue</item>
+        <item>@color/premium_purple</item>
+        <item>@color/premium_fucshia</item>
+        <item>@color/premium_green</item>
+    </array>
+
+    <!-- More Menu Page -->
+    <color name="more_menu_background_color">#F8FAFF</color>
+    <color name="more_menu_card_background_color">@color/white</color>
+    <color name="more_menu_purple">@color/purple_new</color>
+
+    <!-- Home Page -->
+    <color name="home_fatca_color">#7F53BC</color>
+
+    <!-- Horizontal Divider -->
+    <color name="horizontal_divider_color">#E2E8EE</color>
+
+</resources>

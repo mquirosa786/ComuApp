@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ComuApp</string>
+    <string name="navigation_resucito">Resucitó</string>
+    <string name="navigation_inicio">Inicio</string>
+    <string name="navigaion_dufour">Vocabulario Teo.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_label_dufour">Mostrar lecturas</string>
+    <string name="showing_label_dufour">Mostrando lecturas</string>
+    <string name="alert_dialog_option_1_title">Libros bíblicos</string>
+    <string name="alert_dialog_option_2_title">Otros</string>
+    <string name="alert_dialog_content_title">Abreviaciones</string>
+    <string name="button_close">Cerrar</string>
+    <string name="alert_dialog_content_other_1">- Antiguo Testamento (AT)</string>
+    <string name="alert_dialog_content_other_2">"- Nuevo Testamento (NT) "</string>
+    <string name="alert_dialog_content_other_3">- Siguiente (s)</string>
+    <string name="alert_dialog_content_other_4">- Sub Siguiente (ss)</string>
+    <string name="alert_dialog_content_other_5">- Paralelos (p)</string>
+    <string name="alert_dialog_content_other_6">- Confronta (cf)</string>
+</resources>

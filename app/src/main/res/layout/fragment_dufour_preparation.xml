@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.menu.dufour.DufourFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_selector_dufour"
+                android:layout_margin="15dp"
+                android:elevation="7dp"
+                tools:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/boxLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Primer lectura"
+                    android:fontFamily="@font/calibri_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_margin="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/boxLabel"
+                    app:layout_constraintTop_toTopOf="@+id/boxLabel"
+                    android:fontFamily="@font/calibri_regular"
+                    android:id="@+id/boxLabelReading"
+                    android:layout_marginStart="5dp"
+                    tools:text="(Lc 3,38)"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    />
+
+                <View
+                    android:id="@+id/dividerLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/greyBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/boxLabel"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/boxToComplete1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine"
+                    >
+
+                    <TextView
+                        android:id="@+id/firstLabelReading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lectura"
+                        android:textStyle="bold"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etReading1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/firstLabelReading"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/firstLabelReader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etReader1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/firstLabelReader"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/firstLabelMonition"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etMonition1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/firstLabelMonition"
+                        android:inputType="text" />
+
+                    <LinearLayout
+                        android:id="@+id/btnSave1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_btn_dufour"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:layout_margin="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Guardar"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/calibri_regular"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/confirm_icon"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/boxWhenComplete1"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    >
+
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/firstLabelReadingComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/firstLabelReadingComplete"
+                        app:layout_constraintTop_toTopOf="@+id/firstLabelReadingComplete"
+                        android:id="@+id/tvReading1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/firstLabelReadingComplete"
+                        android:id="@+id/firstLabelReaderComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/firstLabelReaderComplete"
+                        app:layout_constraintTop_toTopOf="@+id/firstLabelReaderComplete"
+                        android:id="@+id/tvMonition1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_selector_dufour"
+                android:layout_margin="15dp"
+                android:elevation="7dp"
+                tools:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/boxLabel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Segunda lectura"
+                    android:fontFamily="@font/calibri_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_margin="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/boxLabel2"
+                    app:layout_constraintTop_toTopOf="@+id/boxLabel2"
+                    android:fontFamily="@font/calibri_regular"
+                    android:id="@+id/boxLabelReading2"
+                    android:layout_marginStart="5dp"
+                    tools:text="(Lc 3,38)"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    />
+
+                <View
+                    android:id="@+id/dividerLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/greyBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/boxLabel2"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/boxToComplete2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine2"
+                    >
+
+                    <TextView
+                        android:id="@+id/secondLabelReading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lectura"
+                        android:textStyle="bold"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etReading2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/secondLabelReading"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/secondLabelReader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etReader2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/secondLabelReader"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/secondLabelMonition"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etMonition2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/secondLabelMonition"
+                        android:inputType="text" />
+
+                    <LinearLayout
+                        android:id="@+id/btnSave2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_btn_dufour"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:layout_margin="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Guardar"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/calibri_regular"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/confirm_icon"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/boxWhenComplete2"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine2"
+                    android:visibility="gone"
+                    tools:visibility="gone"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    >
+
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/secondLabelReadingComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/secondLabelReadingComplete"
+                        app:layout_constraintTop_toTopOf="@+id/secondLabelReadingComplete"
+                        android:id="@+id/tvReading2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/secondLabelReadingComplete"
+                        android:id="@+id/secondLabelReaderComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/secondLabelReaderComplete"
+                        app:layout_constraintTop_toTopOf="@+id/secondLabelReaderComplete"
+                        android:id="@+id/tvMonition2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_selector_dufour"
+                android:layout_margin="15dp"
+                android:elevation="7dp"
+                tools:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/boxLabel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Tercer lectura"
+                    android:fontFamily="@font/calibri_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_margin="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/boxLabel3"
+                    app:layout_constraintTop_toTopOf="@+id/boxLabel3"
+                    android:fontFamily="@font/calibri_regular"
+                    android:id="@+id/boxLabelReading3"
+                    android:layout_marginStart="5dp"
+                    tools:text="(Lc 3,38)"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    />
+
+                <View
+                    android:id="@+id/dividerLine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/greyBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/boxLabel3"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/boxToComplete3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine3"
+                    >
+
+                    <TextView
+                        android:id="@+id/thirdLabelReading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lectura"
+                        android:textStyle="bold"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etReading3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/thirdLabelReading"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/thirdLabelReader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etReader3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/thirdLabelReader"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/thirdLabelMonition"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etMonition3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/thirdLabelMonition"
+                        android:inputType="text" />
+
+                    <LinearLayout
+                        android:id="@+id/btnSave3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_btn_dufour"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:layout_margin="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Guardar"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/calibri_regular"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/confirm_icon"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/boxWhenComplete3"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine3"
+                    android:visibility="gone"
+                    tools:visibility="gone"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    >
+
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/thirdLabelReadingComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/thirdLabelReadingComplete"
+                        app:layout_constraintTop_toTopOf="@+id/thirdLabelReadingComplete"
+                        android:id="@+id/tvReading3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/thirdLabelReadingComplete"
+                        android:id="@+id/thirdLabelReaderComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/thirdLabelReaderComplete"
+                        app:layout_constraintTop_toTopOf="@+id/thirdLabelReaderComplete"
+                        android:id="@+id/tvMonition3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_selector_dufour"
+                android:layout_margin="15dp"
+                android:elevation="7dp"
+                >
+
+                <TextView
+                    android:id="@+id/boxLabel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Evangelio"
+                    android:fontFamily="@font/calibri_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"
+                    android:layout_margin="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/boxLabel4"
+                    app:layout_constraintTop_toTopOf="@+id/boxLabel4"
+                    android:fontFamily="@font/calibri_regular"
+                    android:id="@+id/boxLabelReading4"
+                    android:layout_marginStart="5dp"
+                    tools:text="(Lc 3,38)"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    />
+
+                <View
+                    android:id="@+id/dividerLine4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/greyBorder"
+                    app:layout_constraintTop_toBottomOf="@+id/boxLabel4"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/boxToComplete4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine4"
+                    >
+
+                    <TextView
+                        android:id="@+id/fourthLabelReading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lectura"
+                        android:textStyle="bold"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etReading4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/fourthLabelReading"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/fourthLabelReader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etReader4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/fourthLabelReader"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:id="@+id/fourthLabelMonition"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etMonition4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/calibri_regular"
+                        android:layout_marginEnd="15dp"
+                        android:autofillHints=""
+                        android:textSize="12sp"
+                        android:labelFor="@+id/fourthLabelMonition"
+                        android:inputType="text" />
+
+                    <LinearLayout
+                        android:id="@+id/btnSave4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_btn_dufour"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:layout_gravity="end"
+                        android:gravity="center"
+                        android:layout_margin="15dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Guardar"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/calibri_regular"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/confirm_icon"
+                            android:layout_marginEnd="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/boxWhenComplete4"
+                    app:layout_constraintTop_toBottomOf="@+id/dividerLine4"
+                    android:visibility="gone"
+                    tools:visibility="gone"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    >
+
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:id="@+id/fourthLabelReadingComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Lee:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/fourthLabelReadingComplete"
+                        app:layout_constraintTop_toTopOf="@+id/fourthLabelReadingComplete"
+                        android:id="@+id/tvReading4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fourthLabelReadingComplete"
+                        android:id="@+id/fourthLabelReaderComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Black"
+                        android:fontFamily="@font/calibri_regular"
+                        android:text="Monición:"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        />
+
+                    <TextView
+                        app:layout_constraintStart_toEndOf="@+id/fourthLabelReaderComplete"
+                        app:layout_constraintTop_toTopOf="@+id/fourthLabelReaderComplete"
+                        android:id="@+id/tvMonition4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/calibri_regular"
+                        tools:text="Mario Quiros"
+                        android:layout_marginStart="5dp"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <data>
+
+    </data>
+</layout>

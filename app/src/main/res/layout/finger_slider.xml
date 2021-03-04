@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slideToComplete_root"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/slider_background">
+
+        <TextView
+            android:id="@+id/slide_to_complete_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="72dp"
+            android:layout_marginStart="72dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="Slide to pay"
+            android:textColor="@color/title_grey"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/slide_to_complete_foreground"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/slider_foreground" />
+
+        <TextView
+            android:id="@+id/slide_to_complete_mid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/slide_to_complete_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slider_thumb_arrow" />
+
+        <TextView
+            android:id="@+id/slide_to_complete_done_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="72dp"
+            android:layout_marginStart="72dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            />
+
+        <ProgressBar
+            android:id="@+id/slide_to_complete_loading_indicator"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:indeterminate="true"
+            tools:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/complete_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/slider_thumb_checkmark"/>
+
+
+    </RelativeLayout>
+
+</layout>
